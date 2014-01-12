@@ -20,7 +20,8 @@ def getTwitchChannels(jsonData):
 
 
 def formatLink(channel):
-	return "[{0}]({1})".format(channel[u'display_name'],channel[u'url'])
+	encodedName = channel[u'display_name'].replace("-","&#45;")
+	return "[{0}]({1})".format(encodedName,channel[u'url'])
 
 
 def formatTwitchStreams(channels):
