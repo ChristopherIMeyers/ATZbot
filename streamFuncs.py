@@ -11,8 +11,8 @@ def getTwitchStreams():
 	return json.loads(conn.getresponse().read())
 
 
-def getTwitchChannels(jsonData):
-	return (k[u'channel'] for k in jsonData[u'streams'])
+def getTwitchChannels():
+	return (k[u'channel'] for k in getTwitchStreams()[u'streams'])
 
 def getStreamData(channelName):
 	conn = httplib.HTTPSConnection('api.twitch.tv')

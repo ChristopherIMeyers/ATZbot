@@ -16,7 +16,7 @@ def formatTwitchStreams(channels):
 	return " | ".join(map(formatLink, channels)) + "\n"
 
 
-replace = formatTwitchStreams(streamFuncs.getTwitchChannels(streamFuncs.getTwitchStreams()))
+replace = formatTwitchStreams(streamFuncs.getTwitchChannels())
 
 
 r = praw.Reddit(user_agent='ATZ bot!  Pipe Twitch data to Reddit')
