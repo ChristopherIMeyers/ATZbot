@@ -13,3 +13,15 @@ def getTwitchStreams():
 
 def getTwitchChannels(jsonData):
 	return (k[u'channel'] for k in jsonData[u'streams'])
+
+def getStreamData(channelName):
+	conn = httplib.HTTPSConnection('api.twitch.tv')
+	conn.connect()
+	request = conn.putrequest('GET', '/kraken/streams?channel='+channelName)
+	conn.putheader('Content-Type','application/json')
+	conn.endheaders()
+	conn.send('')
+	return json.loads(conn.getresponse().read())
+
+def isStreamUp():
+	return getStreamData('egjd')['streams'] != []

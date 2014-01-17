@@ -5,17 +5,7 @@ import re
 
 import settings as settings
 
-def getStreamData(channelName):
-	conn = httplib.HTTPSConnection('api.twitch.tv')
-	conn.connect()
-	request = conn.putrequest('GET', '/kraken/streams?channel='+channelName)
-	conn.putheader('Content-Type','application/json')
-	conn.endheaders()
-	conn.send('')
-	return json.loads(conn.getresponse().read())
-
-def isStreamUp():
-	return getStreamData('egjd')['streams'] != []
+import streamFuncs
 
 def formatLink(streamUp):
 	if streamUp:
@@ -25,7 +15,7 @@ def formatLink(streamUp):
 	return "[Jaedong's stream is **{0}**]({1})".format(statusString,'http://www.twitch.tv/EGJD')
 
 
-streamStatus = formatLink(isStreamUp())
+streamStatus = formatLink(streamFuncs.isStreamUp())
 
 
 r = praw.Reddit(user_agent='Jaedong bot!  Get current status of Jaedong\'s stream')
