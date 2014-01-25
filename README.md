@@ -13,3 +13,7 @@ redditpass = "secretpass"
 flairbot.py
 * uses settings.py
 * script that pulls twitch stream information and pipes it to the atz sidebar every X minutes
+
+
+(WIP)
+new replay parsing flair bot
