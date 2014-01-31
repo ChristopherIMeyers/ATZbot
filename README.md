@@ -21,7 +21,6 @@ replayflair/
 * supports AM/EU/KR
 
 TODO
-* use settings.py
 * automatic flair updating
 * consolidate code 
 * tests
