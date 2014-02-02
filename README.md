@@ -15,10 +15,6 @@ flairbot.py
 * script that pulls twitch stream information and pipes it to the atz sidebar every X minutes
 
 
-replayflair/
-
-* parses replays to figure out battle.net account and reddit account names
-* supports AM/EU/KR
 
 TODO
 * automatic flair updating
