@@ -8,12 +8,12 @@ import settings as settings
 import streamFuncs
 
 def formatLink(channel):
-	encodedName = channel[u'display_name'].replace("-","&#45;")
-	return "[{0}]({1})".format(encodedName,channel[u'url'])
+  encodedName = channel[u'display_name'].replace("-","&#45;")
+  return "[{0}]({1})".format(encodedName,channel[u'url'])
 
 
 def formatTwitchStreams(channels):
-	return " | ".join(map(formatLink, channels)) + "\n"
+  return " | ".join(map(formatLink, channels)) + "\n"
 
 
 replace = formatTwitchStreams(streamFuncs.getTwitchChannels())

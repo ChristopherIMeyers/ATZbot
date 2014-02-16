@@ -8,11 +8,11 @@ import settings as settings
 import streamFuncs
 
 def formatLink(streamUp):
-	if streamUp:
-		statusString = "online!"
-	else:
-		statusString = "offline"
-	return "[Jaedong's stream is **{0}**]({1})".format(statusString,'http://www.twitch.tv/EGJD')
+  if streamUp:
+    statusString = "online!"
+  else:
+    statusString = "offline"
+  return "[Jaedong's stream is **{0}**]({1})".format(statusString,'http://www.twitch.tv/EGJD')
 
 
 streamStatus = formatLink(streamFuncs.isStreamUp())
