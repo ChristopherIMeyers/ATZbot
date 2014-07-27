@@ -1,7 +1,7 @@
 ATZbot [![Build Status](https://travis-ci.org/ChristopherIMeyers/ATZbot.svg?branch=master)](https://travis-ci.org/ChristopherIMeyers/ATZbot)
 ========================
 
-This repo contains all of the scripts that run for the mods on reddit.com/r/allthingszerg.
+This repo contains the script that runsfor the mods on reddit.com/r/allthingszerg to update the sidebar with stream information.  The project is setup so it can handle new additional scripts later on as needed.
 
 
 settings.py (untracked)
@@ -23,5 +23,4 @@ flairbot.py
 TODO
 * automatic flair updating
 * consolidate code 
-* tests
-* travis.ci
+* more tests
