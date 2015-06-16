@@ -14,9 +14,13 @@ redditpass = "secretpass"
 ```
 
 
-flairbot.py
+streamsbot.py
 * uses settings.py
 * script that pulls twitch stream information and pipes it to the atz sidebar every X minutes
+
+jaedong.py
+* uses settings.py
+* script that pulls twitch stream information and pipes it to the r/jaedong sidebar every X minutes
 
 
 
