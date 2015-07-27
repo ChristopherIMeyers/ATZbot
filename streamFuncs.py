@@ -4,7 +4,7 @@ import json
 def getTwitchStreams():
   conn = httplib.HTTPSConnection('api.twitch.tv')
   conn.connect()
-  request = conn.putrequest('GET', '/kraken/streams?game=StarCraft+II%3A+Heart+of+the+Swarm')
+  request = conn.putrequest('GET', '/kraken/streams?game=StarCraft+II')
   conn.putheader('Content-Type','application/json')
   conn.endheaders()
   conn.send('')
