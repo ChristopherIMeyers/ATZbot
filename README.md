@@ -4,6 +4,22 @@ ATZbot [![Build Status](https://travis-ci.org/ChristopherIMeyers/ATZbot.svg?bran
 This repo contains the script that runsfor the mods on reddit.com/r/allthingszerg to update the sidebar with stream information.  The project is setup so it can handle new additional scripts later on as needed.
 
 
+
+Update Script on Server
+---
+```bash
+cp ATZbot/settings.py settings.py
+rm -r ATZbot
+wget https://github.com/ChristopherIMeyers/ATZbot/archive/master.zip
+unzip master.zip
+rm master.zip
+mv ATZbot-master ATZbot
+mv settings.py ATZbot/settings.py
+```
+
+
+
+
 settings.py (untracked)
 * contains all of the (private) configurations (username/passwords)
 * example below
