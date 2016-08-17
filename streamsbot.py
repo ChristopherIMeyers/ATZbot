@@ -25,7 +25,7 @@ subreddit = r.get_subreddit("AllThingsZerg")
 
 
 description_current = r.get_settings(subreddit)['description']
-newdescription = re.sub(r'&gt; ##Live Now!\n[^-]+','&gt; ##Live Now!\n'+replace+'\n',description_current)
+newdescription = re.sub(r'> ##Live Now!\n[^-]+','&gt; ##Live Now!\n'+replace+'\n',description_current)
 
 newdescription = newdescription.replace("&gt;",">")
 
