@@ -3,7 +3,13 @@ ATZbot [![Build Status](https://travis-ci.org/ChristopherIMeyers/ATZbot.svg?bran
 
 This repo contains the script that runsfor the mods on reddit.com/r/allthingszerg to update the sidebar with stream information.  The project is setup so it can handle new additional scripts later on as needed.
 
-
+Update AWS Server
+---
+```bash
+sudo yum install python27
+sudo yum install python27-pip
+sudo python27 -m pip install praw
+```
 
 Update Script on Server
 ---
