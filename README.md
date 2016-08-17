@@ -23,7 +23,12 @@ mv ATZbot-master ATZbot
 mv settings.py ATZbot/settings.py
 ```
 
-
+Crontab 
+---
+```bash
+MAILTO=*********
+*/30 * * * * python27 /home/ec2-user/ATZbot/streamsbot.py
+```
 
 
 settings.py (untracked)
