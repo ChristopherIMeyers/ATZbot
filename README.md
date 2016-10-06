@@ -1,7 +1,7 @@
 ATZbot [![Build Status](https://travis-ci.org/ChristopherIMeyers/ATZbot.svg?branch=master)](https://travis-ci.org/ChristopherIMeyers/ATZbot)
 ========================
 
-This repo contains the script that runsfor the mods on reddit.com/r/allthingszerg to update the sidebar with stream information.  The project is setup so it can handle new additional scripts later on as needed.
+This repo contains the script that runs for the mods on reddit.com/r/allthingszerg to update the sidebar with stream information.
 
 
 settings.py (untracked)
@@ -19,6 +19,4 @@ streamsbot.py
 * script that pulls twitch stream information and pipes it to the atz sidebar every X minutes
 
 TODO
-* automatic flair updating
-* consolidate code 
 * more tests
