@@ -20,7 +20,7 @@ replace = formatTwitchStreams(streamFuncs.getTwitchChannels())
 
 
 r = praw.Reddit(user_agent='ATZ script!  Pipe Twitch data to Reddit')
-r.login(settings.reddituser, settings.redditpass)
+r.login(settings.reddituser, settings.redditpass, disable_warning=True)
 subreddit = r.get_subreddit("AllThingsZerg")
 
 
